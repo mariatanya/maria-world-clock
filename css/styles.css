@@ -1,10 +1,68 @@
 body {
-  background-color: aliceblue;
-  background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
   font-family: "Quicksand", sans-serif;
   text-align: center;
 }
 
+.container {
+  margin: 20px auto;
+  max-width: 45%;
+  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+  background-color: orange;
+  backdrop-filter: blur(6px);
+  padding: 20px;
+  border-radius: 45px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  display: block;
+  margin: 20px auto;
+  width: 85%;
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.city {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px auto;
+  padding: 10px 0;
+}
+
+.city-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.time {
+  font-size: 45px;
+  font-weight: bold;
+  color: #000435;
+}
+small {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+h2 {
+  color: #000435;
+  margin: 0;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date {
+  font-size: 18px;
+  opacity: 0.7;
+  margin: 0;
+  padding: 0;
+}
 footer {
   font-family: "Be Vietnam Pro", sans-serif;
 }
