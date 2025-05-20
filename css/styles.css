@@ -5,7 +5,8 @@ body {
 
 .container {
   margin: 25px auto;
-  max-width: 45%;
+  width: 90%;
+  max-width: 600px;
   background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
   background-color: orange;
   backdrop-filter: blur(6px);
@@ -18,12 +19,13 @@ select {
   display: block;
   margin: 20px auto;
   width: 85%;
+  max-width: 500px;
   padding: 8px 10px;
   font-size: 18px;
   border-radius: 10px;
 }
 .cities {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-left: 35px;
 }
 
@@ -43,21 +45,22 @@ select {
 }
 
 .time {
-  font-size: 45px;
-  font-family: "Comfortaa", sans-serif;
-  font-weight: bold;
+  font-size: clamp(24px, 5vw, 40px);
+  font-family: "Sometype Mono", monospace;
+  font-weight: 500;
   color: #000435;
 }
 small {
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
+  font-weight: 500;
   vertical-align: middle;
 }
 
 h2 {
   color: #000435;
   margin: 0;
-  font-size: 30px;
+  font-size: clamp(1.2rem, 2.5vw, 30px);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -76,4 +79,23 @@ h2 {
 }
 footer {
   font-family: "Be Vietnam Pro", sans-serif;
+  margin-top: 30px;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 600px) {
+  .city {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .city-info {
+    align-items: center;
+  }
+
+  .time {
+    font-size: 35px;
+  }
 }
