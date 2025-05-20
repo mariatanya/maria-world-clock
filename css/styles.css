@@ -4,12 +4,12 @@ body {
 }
 
 .container {
-  margin: 20px auto;
+  margin: 25px auto;
   max-width: 45%;
   background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
   background-color: orange;
   backdrop-filter: blur(6px);
-  padding: 20px;
+  padding: 10px;
   border-radius: 45px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
@@ -21,6 +21,10 @@ select {
   padding: 8px 10px;
   font-size: 18px;
   border-radius: 10px;
+}
+.cities {
+  margin-top: 35px;
+  margin-left: 35px;
 }
 
 .city {
