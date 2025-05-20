@@ -61,7 +61,8 @@ function updateCityTime(event) {
         </div>`;
   }
 
-  let back = document.querySelector(".button");
+  let back = document.querySelector("#button");
+  back.classList.add("button");
   back.innerHTML = `Back`;
 }
 let select = document.querySelector("#city");
