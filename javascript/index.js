@@ -38,18 +38,15 @@ function updateCityTime(event) {
   };
 
   let timezone = event.target.value;
-  let tz, cityName;
+  let cityName = timezones[timezone];
 
   if (timezone === "current") {
-    tz = moment.tz.guess();
-    cityName = tz.replace("_", "").split("/")[1];
-  } else {
-    tz = timezone;
-    cityName = timezones[timezone];
+    timezone = moment.tz.guess();
+    cityName = cityName = timezone.split("/").pop().replace("_", " ");
   }
 
   if (timezone.length > 0) {
-    let now = moment.tz(tz);
+    let now = moment.tz(timezone);
     let date = now.format("dddd, D MMMM");
     let time = now.format("HH:mm  ");
     let zone = now.format("zz");
