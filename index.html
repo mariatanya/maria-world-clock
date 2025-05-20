@@ -7,13 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cal+Sans&family=Comfortaa:wght@300..700&family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cal+Sans&family=Comfortaa:wght@300..700&family=Fira+Mono:wght@400;500;700&family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/96d8e18d9d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -35,33 +37,33 @@
         <option value="vancouver">Vancouver</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="auckland">
         <div class="city-info">
           <h2>Auckland</h2>
-          <div class="date">Friday, 17 May</div>
+          <div class="date"></div>
         </div>
-        <div class="time">14:00 <small>NZST</small></div>
+        <div class="time"><small class="zone">NZST</small></div>
       </div>
-      <div class="city">
-        <div class="city-info">
-          <h2>Cape Town</h2>
-          <div class="date">Friday, 17 May</div>
-        </div>
-        <div class="time">14:00 <small>SAST</small></div>
-      </div>
-      <div class="city">
+      <div class="city" id="dublin">
         <div class="city-info">
           <h2>Dublin</h2>
-          <div class="date">Friday, 17 May</div>
+          <div class="date"></div>
         </div>
-        <div class="time">14:00 <small>IST</small></div>
+        <div class="time"><small class="zone">IST</small></div>
       </div>
-      <div class="city">
+      <div class="city" id="delhi">
+        <div class="city-info">
+          <h2>New Delhi</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"><small class="zone">IST</small></div>
+      </div>
+      <div class="city" id="dc">
         <div class="city-info">
           <h2>Washington DC</h2>
-          <div class="date">Friday, 17 May</div>
+          <div class="date"></div>
         </div>
-        <div class="time">14:00 <small>EDT</small></div>
+        <div class="time"><small class="zone">EDT</small></div>
       </div>
     </div>
     <footer>
@@ -72,6 +74,6 @@
         ><i class="fa-brands fa-github"></i
       ></a>
     </footer>
-    <script src="javascript/index.js"></script>
   </body>
+  <script src="javascript/index.js"></script>
 </html>

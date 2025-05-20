@@ -40,11 +40,13 @@ select {
 
 .time {
   font-size: 45px;
+  font-family: "Comfortaa", sans-serif;
   font-weight: bold;
   color: #000435;
 }
 small {
   font-size: 15px;
+  font-family: "Quicksand", sans-serif;
   vertical-align: middle;
 }
 
