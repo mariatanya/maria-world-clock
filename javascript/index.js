@@ -60,6 +60,9 @@ function updateCityTime(event) {
           <div class="time">${time}<small class="zone">${zone}</small></div>
         </div>`;
   }
+
+  let back = document.querySelector(".button");
+  back.innerHTML = `Back`;
 }
 let select = document.querySelector("#city");
 select.addEventListener("change", updateCityTime);

@@ -69,6 +69,11 @@ h2 {
   margin: 0;
   padding: 0;
 }
+
+.button {
+  display: flex;
+  padding: 5px 40px;
+}
 footer {
   font-family: "Be Vietnam Pro", sans-serif;
 }
