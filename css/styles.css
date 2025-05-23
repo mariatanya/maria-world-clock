@@ -45,8 +45,8 @@ select {
 }
 
 .time {
-  font-size: clamp(24px, 5vw, 40px);
-  font-family: "Sometype Mono", monospace;
+  font-size: clamp(24px, 5vw, 37px);
+  font-family: "Cerebri Sans", Helvetica, Arial, sans-serif; /*"Sometype Mono", monospace;*/
   font-weight: 500;
   color: #000435;
 }
